@@ -1,0 +1,374 @@
+
+	h1{
+		font-family: 'Courgette', cursive;
+	}
+	h1 span{
+		color:#007bff;
+		font-weight: bolder;
+	}
+	p{
+		color:#888;
+		margin-bottom: 70px
+	}
+	.page-content{
+		margin-left: 300px;
+		padding: 50px 10px;
+		overflow: hidden;
+	}
+	
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+	/*Start Side_Navbar */
+	.navbar-brand{
+		font-family: 'Lobster', cursive;
+		font-size: 32px;
+	    font-weight: 500;
+	    margin-top: 18%
+	}
+
+	/*Start custom scroll*/
+
+		/* width */
+		.Side_Navbar::-webkit-scrollbar {
+		  width: 10px;
+		}
+
+		/* Track */
+		.Side_Navbar::-webkit-scrollbar-track {
+		  background:#181e2f; 
+		}
+		 
+		/* Handle */
+		.Side_Navbar::-webkit-scrollbar-thumb {
+		  background: black; 
+		  border-radius:80px
+		}
+
+		/* Handle on hover */
+		.Side_Navbar::-webkit-scrollbar-thumb:hover {
+		  background: black; 
+		}
+
+
+	/*End  custom scroll*/
+
+	.Side_Navbar {
+	  height: 100%; 
+	  min-width: 300px;
+      max-width: 300px;
+	  position: fixed; 
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  background-color: #181e2f;
+	  overflow-x: hidden;
+	}
+
+	.img-sidebar{
+		height: 160px;
+		position: relative;
+		z-index: 0;
+	}
+
+	.img-sidebar:after{
+		z-index: -1;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    content: '';
+	    background: #000;
+	    opacity: .5;
+	}
+	.sidebar-links a{
+		padding: 15px 30px;
+		color: white;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+		transition: .3s all ease;
+	}
+	.sidebar-links a:hover{
+		background: #2f89fc;
+		border-bottom: 1px solid #2f89fc;
+	}
+	/*End Side_Navbar */
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start Login Form */
+
+		.login-page{
+			background-color: #8080807d;
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			top: 0;
+			left: 0;
+		}
+		.login-page .center-page{
+			margin-top: 65px;
+		    background-color: #ffffff;
+		    height: 550px;
+
+		}
+		.side-form-img img{
+			height: 550px;
+   			width: 35%
+		}
+		.login{
+			position: absolute;
+		    width: 25%;
+		    top: 29%;
+		    left: 50%;
+		}
+		.login input,
+		.login h4{
+			margin-bottom: 20px
+		}
+		.login h4{
+			font-family: 'Lobster', cursive;
+		}
+
+	/* End Login Form*/
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start Statistics */
+
+		.home-stat{
+			margin-bottom: 30px;
+		}
+		.home-stat .stat{
+			padding: 10px;
+		}
+		.home-stat .stat .card-title{
+			font-size: 40px;
+		}
+		.total-members{
+			background-color: #528088;
+			box-shadow: 4px 5px 15px #528088;
+		}
+		.total-items{
+			background-color: #625288;
+			box-shadow: 4px 5px 15px #625288;
+		}
+		.total-pending-items{
+			background-color: #88526d;
+			box-shadow: 4px 5px 15px #88526d;
+		}
+		.total-comments{
+			background-color: #888152;
+			box-shadow: 4px 5px 15px #888152;
+		}
+
+
+		.latest .card{
+			box-shadow: 7px 3px 11px #c1a8a8;
+			margin-bottom:30px
+		}
+		.latest .card-item{
+			padding: 10px
+		}
+		.latest .card-item:nth-of-type(odd){
+			background-color: #EEE;
+		}
+		.latest .comment-box{
+			padding: 10px
+		}
+		.latest .comment-box .comment-owner,
+		.latest .comment-box .comment-content{
+			display:inline-block;
+		}
+		.latest .comment-box .comment-owner{
+			margin-bottom: 16px;
+		}
+		.latest .comment-box .comment-content{
+			margin-left: 20px;
+			background-color: #EFEFEF;
+			position: relative;
+			padding: 10px;
+			width: 95%
+		}
+		.latest .comment-box .comment-content:before{
+			content: "";
+			display: block;
+			position: absolute;
+			top: -30px;
+			left: 5px;
+			border-style: solid;
+			border-width: 15px;
+			border-color: transparent transparent #EFEFEF transparent;
+		}
+	/* End Statistics */
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start Manage Category*/
+
+		.category-view{
+			margin-top: 25px;
+		}
+		.category-part{
+			float: left;
+			margin-left: 60px;
+			margin-bottom: 20px;
+			box-shadow: 9px 9px 16px #a9a5a5;
+			cursor: pointer;
+		}
+		.clear{
+			clear: both;
+		}
+		.category-part-overlay{
+			-webkit-transition:all .3s ease-in-out;
+			-moz-transition:all .3s ease-in-out;
+			transition:all .3s ease-in-out;
+			background-color: #0000006e;
+			height:100%;
+			width:100%;
+			position: absolute;
+			overflow: hidden;
+			opacity: 0;
+		}
+		.category-part:hover .category-part-overlay{
+			opacity: 1;
+		}
+		.category-part-overlay a{
+			-webkit-transition:all .3s ease-in-out;
+			-moz-transition:all .3s ease-in-out;
+			transition:all .3s ease-in-out;
+			margin-left: 10px;
+			position: relative;
+			top:40%;
+			right: -85%;
+		}
+		.category-part-overlay:hover a{
+			right:0%;
+		}
+
+	/* End Manage Category*/
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start Manage Member */
+
+		.main-table{
+			box-shadow: 0 9px 18px #CCC;
+			margin-top: 25px;
+		}
+
+		.main-table td{
+			vertical-align: middle;
+		}
+
+		.main-table th{
+			background-color: #2d918f;
+			color: #FFF;
+		}
+
+	/* End Manage Member */
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start manage items*/
+
+		.manage-items nav{
+			border-radius: 40px;
+		}
+		.manage-items .nav-item{
+			margin-left: 215px;
+		}
+
+		.item-view{
+			margin-top: 25px;
+		}
+		.item-part{
+			float: left;
+			margin-left: 80px;
+			margin-bottom: 20px;
+			box-shadow: 9px 9px 16px #a9a5a5;
+			cursor: pointer;
+		}
+		.clear{
+			clear: both;
+		}
+		.item-part-overlay{
+			-webkit-transition:all .3s ease-in-out;
+			-moz-transition:all .3s ease-in-out;
+			transition:all .3s ease-in-out;
+			background-color: #0000006e;
+			height:100%;
+			width:100%;
+			position: absolute;
+			overflow: hidden;
+			opacity: 0;
+		}
+		.item-part:hover .item-part-overlay{
+			opacity: 1;
+		}
+		.item-part-overlay a{
+			-webkit-transition:all .3s ease-in-out;
+			-moz-transition:all .3s ease-in-out;
+			transition:all .3s ease-in-out;
+			margin-left: 10px;
+			position: relative;
+			top:40%;
+			right: -85%;
+		}
+		.item-part-overlay:hover a{
+			right:0%;
+		}
+
+	/* End manage items*/
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* start upload image*/
+		.upload-img{
+			position: relative;
+		}
+		.upload-img img{
+			height: 100%;
+			width: 90%;
+			box-shadow: 9px 4px 22px #9e9999;
+		}
+		.overlay-upload-img{
+			-webkit-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #0000006e;
+			opacity: 0;
+		    height: 100%;
+			width: 90%;
+		}
+		.overlay-upload-img div{
+		    position: relative;
+    		top: 45%;
+			font-size: x-large;
+			color: #d2c6c6;
+		}
+		.upload-img:hover .overlay-upload-img{
+			opacity: 1;
+			cursor: pointer;
+		}
+		.upload-img input[type="file"]{
+			position: absolute;
+			top: 0;
+			z-index: 999;
+			height: 100%;
+		    width: 100%;
+		    opacity: 0;
+		    cursor: pointer;
+		}
+
+	/* end upload image*/

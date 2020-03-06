@@ -1,0 +1,428 @@
+	h1{
+		font-family: 'Courgette', cursive;
+		margin-top: 70px
+	}
+	h1 span{
+		color:#007bff;
+		font-weight: bolder;
+	}
+	p{
+		color:#888;
+		margin-bottom: 70px;
+	}
+
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/*Start Navbar */
+	.navbar{
+		background-color:#60117600;
+	}
+	.navbar-brand{
+		margin-left: 60px;
+		font-family: 'Lobster', cursive;
+		font-size: 38px;
+	    font-weight: 500;
+	}
+
+	.navbar-nav{
+		margin-left: 35px;
+	}
+
+	.right-items-nav{
+		margin-right: 30px;
+		color:#FFF;
+		font-weight: 600;
+	}
+	.navbar-login,
+	.navbar-register{
+		font-family: 'Courgette', cursive;
+	}
+
+	.nav-item{
+		margin:28px auto;
+		margin-left: 55px;
+	}
+	.nav-link{
+		color:#FFF;
+	}
+
+	.nav-item a:hover{
+		color: #9fb0a9;
+	}
+
+	.dropdown-menu{
+		min-width: 200px;
+		background-color: #FFF;
+	}
+	.dropdown-item{
+		-webkit-transition:padding 0.5s ease;
+		-moz-transition:padding 0.5s ease;
+		-o-transition:padding 0.5s ease;
+		transition:padding 0.5s ease;
+		color: black;
+	}
+
+	.dropdown-item:hover, .dropdown-item:focus{
+		background-color: #601176;
+		color: #FFF;
+		padding-left: 30px;
+	}
+
+	.categories-menu a:hover,
+	.profile-image-menu a:hover{
+		color:#FFF;
+	}
+
+	.nav-scrolling{
+		height:75px;
+		background-color: #601176;
+		transition:background-color 1.5s ease;
+	}
+
+	.user-img-nav img{
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		cursor:pointer;
+	}
+	.user-img-nav img:hover{
+		box-shadow: 3px 3px 14px #7b7b7b;
+	}
+
+
+	/*End Navbar */
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start Carousel*/
+
+
+	.overlay-Carousel{
+		 position: absolute;
+	     width: 100%;
+	     height: 100%;
+	     top: 0;
+	     left:0;
+	     background-color:rgba(0,0,0,.6);
+	     z-index: 2;
+	}
+
+
+	/* End Carousel*/
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start Login Form */
+
+	.login{
+		width: 350px;
+		margin: 120px auto;
+	}
+
+	.login input{
+		margin-bottom: 15px;
+	}
+
+	/* End Login Form*/
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start modal*/
+		.modal-content{
+			border-radius: 50px 0px 50px 0px;
+			margin-bottom: 20px;
+			box-shadow: 0px 10px 25px #a9a1a9;
+		}
+
+		.modal-lg{
+			max-width: 600px;
+		}
+
+
+		.modal-buttons-switcher{
+			font-weight: bolder;
+			margin-bottom: 65px;
+			cursor: pointer;	
+		}
+
+		.modal-buttons-switcher span{
+			line-height: 70px;
+			font-size: 20px;
+		}
+
+
+		.btn-login-switcher{
+			border-radius: 50px 0px 50px 0px;
+		}
+		.btn-register-switcher{
+			border-radius: 0px 0px 0px 50px;
+		}
+
+
+		.switcherModal{ /* add this class with jquery if click on login or register button*/
+			background-color: #6a3276;
+			color: white;
+			box-shadow: 0px 6px 10px #c8b5ca;
+		}
+
+		.modal-content form{
+		    padding: 0px 20px 10px 20px;
+		}
+
+		.login-modal{
+			display:none;
+		}
+
+		.modal-content .fields-form{
+			margin-bottom: 45px
+		}
+
+		.modal-content .form-group{
+			margin-bottom: 30px;
+		}
+
+		.modal-content .input-group input{
+			margin-bottom: 20px;
+			border-radius: 20px;
+		}
+		.modal-content .input-group .input-group-prepend span{
+			margin-bottom: 20px;
+		}
+
+		.login-submit , .register-submit , .forget-password-submit{
+			background-color: #601176;
+			color: #FFF;
+			border-radius: 20px;
+			margin-bottom: 30px;
+			font-size: 20px;
+		    line-height: 35px;
+		}
+
+		.login-submit:hover, .register-submit:hover ,.forget-password-submit:hover{
+			background-color: #7a368d;
+			color: #FFF;
+		}
+
+		.forget-password-form{
+			display:none;
+		}
+		.forgetpass-text{
+			width: 23%;
+		}
+		.forget-password-form .forget-password-submit{
+			margin-bottom: 2px;
+		}
+		.forget-password-form .fields-form{
+			margin-bottom: 0px;
+		}
+
+		.register-form{
+			display: none;
+		}
+		.terms-condation-text{
+			display: none;
+		}
+		.register-form .fields-form{
+			margin-bottom: 0px;
+		}
+
+		.error-window{
+			position: fixed;
+		    width: 50%;
+		    background-color: #0000008c;
+		    z-index: 999;
+		    top: 15%;
+		    left: 25%;
+		    border-radius: 57px;
+		    padding: 30px;
+		    box-shadow: 0px 16px 18px #060506;
+		}
+		.close-error-window{
+		    color: white;
+		    font-weight: 800;
+		    font-size: xx-large;
+		    position: relative;
+		    left: 47%;
+		    top: -6%;
+		    cursor: pointer;
+		}
+		.close-error-window:hover{
+			color:#601176;
+		}
+	/* End modal*/
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+	
+	/* Start profile-info*/
+
+		.profile-info div{
+			padding: 10px
+		}
+		.profile-info span{
+			color:#d800ff;
+		}
+
+	/* End profile-info*/
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start View Category*/
+
+		.category-view{
+			margin-top: 25px;
+		}
+		.category-part{
+			float: left;
+			margin-left: 60px;
+			margin-bottom: 20px;
+			box-shadow: 9px 9px 16px #a9a5a5;
+			cursor: pointer;
+		}
+		.clear{
+			clear: both;
+		}
+		.category-part-overlay{
+			-webkit-transition:all .3s ease-in-out;
+			-moz-transition:all .3s ease-in-out;
+			transition:all .3s ease-in-out;
+			background-color: #0000006e;
+			height:100%;
+			width:100%;
+			position: absolute;
+			overflow: hidden;
+			opacity: 0;
+		}
+		.category-part:hover .category-part-overlay{
+			opacity: 1;
+		}
+		.category-part-overlay a{
+			-webkit-transition:all .3s ease-in-out;
+			-moz-transition:all .3s ease-in-out;
+			transition:all .3s ease-in-out;
+			margin-left: 10px;
+			position: relative;
+			top:40%;
+			right: -85%;
+		}
+		.category-part-overlay:hover a{
+			right:0%;
+		}
+
+
+	/* end View Category*/
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start View items*/
+
+
+		.items-view .item-part{
+			float: left;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+		.items-view .item-part:hover{
+			box-shadow: 3px 2px 18px #988e8e
+		}
+		.clear{
+			clear: both;
+		}
+
+	/* end View items*/
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* Start comments box*/
+
+		.comment-box{
+			padding: 10px;
+		}
+		.comment-content input{
+			width: 60%;
+		    padding: 10px;
+		    border-width: 0;
+		    border-radius: 29px;
+		}
+		.comment-content input:focus{
+		    outline-width: 0;
+		}
+		.comment-box .comment-owner,
+		.comment-box .comment-content{
+			display:inline-block;
+		}
+		.comment-box .comment-owner{
+			margin-bottom: 10px;
+		}
+		.comment-box .comment-content{
+			margin-left: 20px;
+			background-color: #EFEFEF;
+			position: relative;
+			padding: 15px;
+			width: 95%;
+			border-radius: 40px;
+		}
+		.comment-box .comment-content:before{
+			content: "";
+			display: block;
+			position: absolute;
+			top: -26px;
+			left: 28px;
+			border-style: solid;
+			border-width: 15px;
+			border-color: transparent transparent #EFEFEF transparent;
+		}
+	/* end comments box*/	
+
+/* ----------------------------------------------------------------*/
+/* ----------------------------------------------------------------*/
+
+	/* start upload image*/
+		.upload-img{
+			position: relative;
+		}
+		.upload-img img{
+			height: 100%;
+			width: 90%;
+			box-shadow: 9px 4px 22px #9e9999;
+		}
+		.overlay-upload-img{
+			-webkit-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #0000006e;
+			opacity: 0;
+		    height: 100%;
+			width: 90%;
+		}
+		.overlay-upload-img div{
+		    position: relative;
+    		top: 45%;
+			font-size: x-large;
+			color: #d2c6c6;
+		}
+		.upload-img:hover .overlay-upload-img{
+			opacity: 1;
+			cursor: pointer;
+		}
+		.upload-img input[type="file"]{
+			position: absolute;
+			top: 0;
+			z-index: 999;
+			height: 100%;
+		    width: 100%;
+		    opacity: 0;
+		    cursor: pointer;
+		}
+
+	/* end upload image*/
